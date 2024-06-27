@@ -1,0 +1,174 @@
+#header {
+    color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    position: relative;
+}
+
+.back-home {
+    margin-left: auto;
+}
+
+.back-home a {
+    text-decoration: none;
+    color: #ebe3e3;
+    font-size: 10px;
+    transition: color 0.3s;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.menu a {
+    color: var(--white);
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.card-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adiciona espaço entre os cards */
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 20px); /* Largura de 33.33% com margem */
+    margin-bottom: 10px;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card .content-post {
+    font-family: 'Lexend Deca';
+    color: var(--text);
+    padding: 20px;
+}
+
+.card h3 {
+    font-family: 'Lexend Deca';
+    color: var(--title);
+    font-weight: 400;
+    margin-bottom: 1px;
+}
+
+.card .top-post span {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--text);
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+}
+
+.card .options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .options a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.card .options a:hover {
+    color: var(--white);
+    background-color: var(--yellow);
+}
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 1 calc(33.33% - 20px); /* Largura de 33.33% com margem */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* Largura de 50% com margem */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        flex: 1 1 100%; /* Largura total */
+    }
+}
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.details-content {
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    max-height: 0;
+    opacity: 0;
+}
+
+details[open] .details-content {
+    max-height: 1000px;
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+details summary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+.bi-caret-right {
+    margin-left: 0px;
+    transition: transform 0.5s ease-in-out;
+}
+
+details[open] .bi-caret-right {
+    transform: rotate(90deg);
+}
+
+.logo-container h3 {
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,60 @@
+body {
+    background-color: #8d8207 ;
+}
+h1, h2 {
+    color: var(--white);
+    font-family: 'Lexend Deca';
+    text-align: center;
+}
+#header {
+    min-height: 20%;
+}
+#main :where(.form, .input-search){
+    display: grid;
+    gap: 7px;
+    margin: 0 150px;
+    color: var(--white);
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.input-search :where(input, textarea){
+    padding: 2vh;
+}
+input[type="submit"] {
+    cursor: pointer;
+    border: 1px solid transparent;   
+}
+input[type="submit"]:hover {
+    border: 1px solid var(--white);
+}
+textarea{
+        resize: none;
+        width: 20%; 
+        height: 75%;
+}
+.back-home {
+    margin-left: auto;
+}
+.back-home a {
+    text-decoration: none;
+    color: #ebe3e3;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.menu a {
+    color: var(--white);
+    font-size: 16px;
+    margin: 0 10px;
+}

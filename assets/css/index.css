@@ -1,0 +1,113 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+}
+
+.logout {
+    position: absolute;
+    right: 10px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.logout a:hover {
+    color: #f00;
+}
+
+.register-link {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register-link:hover {
+    color: #00f;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-md-3 {
+    flex: 0 0 25%; 
+    max-width: 25%; 
+    padding: 10px 15px; 
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-family: 'Lexend Deca';
+    text-align: center;
+}
+
+.card-text {
+    color: var(--text);
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    color: var(--black);
+    background-color: var(--white);
+    border-color: var(--yellow);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--yellow);
+    border-color: var(--black);
+}

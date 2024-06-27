@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    width: 60px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 8px 30px 8px 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.search-button i {
+    font-size: 1.2em;
+    color: #333;
+}
+.user-link {
+    text-decoration: none; 
+    color: #333; 
+    transition: color 0.3s; 
+}
+
+.user-link:hover {
+    color: #007bff;
+}
+.user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-info {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-name {
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+.user-email {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.user-rating {
+    font-style: italic;
+    color: #888;
+}
+
+.back-home {
+    margin-left: auto;
+}
+.back-home a {
+    text-decoration: none;
+    color: #ebe3e3;
+    font-size: 200px;
+    transition: color 0.3s;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.menu a {
+    color: var(--white);
+    font-size: 24px;
+    margin: 0 10px;
+}
+.logo {
+    width: 90px;
+    height: 60px;
+    margin: 0 auto;
+}

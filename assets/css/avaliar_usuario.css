@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.menu a {
+    color: var(--white);
+    font-size: 24px;
+    margin: 0 10px;
+}
+.logo {
+    width: 90px;
+    height: 60px;
+    margin: 0 auto;
+}
+.back-home {
+    margin-left: auto;
+}
+.back-home a {
+    text-decoration: none;
+    color: #ebe3e3;
+    font-size: 200px;
+    transition: color 0.3s;
+}
+.content {
+    background-color: rgb(255, 253, 253);
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    font-size: 36px;
+    color: #000000;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.rating input[type="radio"]:checked ~ label {
+    color: #ffc107;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #c5b804;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #ffc107;
+}
+.rating label.selected {
+    color: #ffc107;
+}

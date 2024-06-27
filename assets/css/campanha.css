@@ -1,0 +1,121 @@
+#header {
+    color: transparent;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 10px;
+       position: relative;;
+   }
+.container-post{
+    padding: 50px 250px;
+}
+.back-home {
+    margin-left: auto;
+}
+.back-home a {
+    text-decoration: none;
+    color: #ebe3e3;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.menu a {
+    color: var(--white);
+    font-size: 16px;
+    margin: 0 10px;
+}
+.logo {
+    width: 90px;
+    height: 60px;
+    margin: 0 auto;
+}
+.post {
+    font-family: 'Lexend Deca';
+    background-color: var(--white);
+    border-radius: 5px;
+    margin: 50px 0;
+    padding: 0 25px;
+    transition: .5s;
+}
+.post:hover {
+    box-shadow: 5px 0px 10px #38020233;
+}
+.top-post span {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+.content-post h3 {
+    color: var(--title);
+    font-weight: 400;
+}
+.top-post, 
+.content-post p {
+    padding: 20px 0;
+    color: var(--text);
+}
+.top-post i {
+    color: var(--yellow-dark);
+    cursor: pointer
+}
+.content-post p {
+    font-size: 18px;
+}
+.options {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.details-content {
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    max-height: 0;
+    opacity: 0;
+}
+details[open] .details-content {
+    max-height: 1000px;
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+details summary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+details summary::-webkit-details-marker {
+    display: none;
+}
+.bi-caret-right {
+    margin-left: 0px;
+    transition: transform 0.5s ease-in-out;
+}
+details[open] .bi-caret-right {
+    transform: rotate(90deg);
+}
+.logo-container h3{
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --yellow: #FFD700;
+    --yellow-dark: #c5b804;
+    --white: #FFF;
+    --title: #313131;
+    --text: #646464;
+    --linear: linear-gradient(90deg, var(--yellow) 0%, var(--yellow-dark) 100%);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f3f5f7;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50%;
+}
+.input-search i {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+}
+.input-search :where(input, textarea) {
+    width: 100%;
+    padding: 20px 0px 20px 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    outline: none;
+}
+#header, #footer {
+    background: var(--linear);
+    padding: 5vh 5vh 5vh 5vh;
+    color: var(--white);
+    font-family: 'Lexend Deca';
+    font-size: 13px;    
+}
+#header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+}
+#footer { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        position: relative;
+}
+.menu {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+}
+#header .menu h2{
+position: absolute;
+left: 10px;
+text-decoration: none;
+color: #000;
+font-size: 16px;
+transition: color 0.3s;
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+}
+.menu img,
+.menu i {
+    text-decoration: none; 
+    color: var(--white); 
+}
+.menu a {
+    color: var(--white);
+    text-decoration: none;
+}
+.button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.button.edit {
+    border: 1px solid rgba(197, 184, 4, 0.3);
+    color: var(--text);
+}
+.button.edit:hover {
+    color: var(--black);
+    background-color: var(--white);
+    border-color: var(--yellow);
+}
+.button.delete {
+    border: 1px solid rgba(197, 184, 4, 0.3);
+    color: var(--text);
+}
+.button.delete:hover {
+    color: var(--black);
+    background-color: var(--white);
+    border-color: var(--yellow);
+}
